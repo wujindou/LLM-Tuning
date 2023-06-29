@@ -13,7 +13,7 @@ import datasets
 import os
 from pprint import pprint as print
 
-model_path = "THUDM/chatglm2-6b"
+model_path = "THUDM/chatglm2-6b-int4"
 model_config = AutoConfig.from_pretrained(model_path, trust_remote_code=True)
 tokenizer = AutoTokenizer.from_pretrained(model_path, trust_remote_code=True)
 # tokenizer.add_special_tokens({
